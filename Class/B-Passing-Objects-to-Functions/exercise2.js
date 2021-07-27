@@ -26,7 +26,18 @@ let student3 = {
 // "Student " + name + " has passed"
 // Otherwise return the String "Student " + name + " has failed"
 
+function passFail (student){
+    let result = "Student " + student.name + " has failed"
+    if (student.attendance >= 90 && student.examScore > 60){
+        result = "Student " + student.name + " has passed"
+        student.hasPassed = true
+    }
+    return result
+}
 
 // Call the function for each student and console.log the results
 
-
+console.log(passFail(student1))
+console.log(passFail(student2))
+console.log(passFail(student3))
+console.log(student1.hasPassed)

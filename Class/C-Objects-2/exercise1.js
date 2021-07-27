@@ -17,7 +17,9 @@ let house = {
   // - change the previous owners of "house" to ["Brian M.", "Fiona S."]
   // - change the last name of the current owner of "house" to "Montgomery"
   
-
+house.address = "51 Berkley Road."
+house.previousOwners = ["Brian M.", "Fiona S."]
+house.currentOwner.lastName = "Montgomery."
 
   
   /*
@@ -28,7 +30,7 @@ let house = {
     `Expected result: 51 Berkley Road. Actual result: ${house.address}`
   );
   console.log(
-    `Expected result: Brian M., Fiona S. Actual result: ${house.previousOwners.toString()}`
+    `Expected result: Brian M.,Fiona S. Actual result: ${house.previousOwners.toString()}`
   );
   console.log(
     `Expected result: Montgomery. Actual result: ${house.currentOwner.lastName}`
